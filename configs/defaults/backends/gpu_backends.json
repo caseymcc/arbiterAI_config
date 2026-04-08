@@ -1,0 +1,33 @@
+{
+    "description": "GPU architecture backend configuration. Entries are matched against detected GPU names. First matching entry wins. Patterns use case-insensitive substring matching.",
+    "gpu_backends": [
+        {
+            "name": "AMD RDNA 3.5 (Strix Point APU)",
+            "match": ["GFX1151", "GFX1150"],
+            "disabled_backends": ["rocm", "hip"],
+            "backend_priority": ["vulkan"],
+            "notes": "ROCm/HIP crashes on gfx1150/gfx1151 (Strix Point) due to unsupported ops in libamdhip64"
+        },
+        {
+            "name": "AMD RDNA 4",
+            "match": ["GFX12", "RX 9070", "RX 9060"],
+            "disabled_backends": [],
+            "backend_priority": ["vulkan"],
+            "notes": "RDNA 4 — ROCm support varies; Vulkan is generally more stable"
+        },
+        {
+            "name": "AMD RDNA 3 (Discrete)",
+            "match": ["GFX1100", "GFX1101", "GFX1102", "RX 7900", "RX 7800", "RX 7700", "RX 7600"],
+            "disabled_backends": [],
+            "backend_priority": ["rocm", "vulkan"],
+            "notes": "RDNA 3 discrete GPUs — ROCm well supported"
+        },
+        {
+            "name": "NVIDIA (CUDA)",
+            "match": ["NVIDIA", "GeForce", "RTX", "GTX", "Tesla", "Quadro"],
+            "disabled_backends": [],
+            "backend_priority": ["cuda", "vulkan"],
+            "notes": "NVIDIA GPUs — prefer CUDA over Vulkan"
+        }
+    ]
+}
