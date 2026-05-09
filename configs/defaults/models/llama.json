@@ -171,10 +171,22 @@
                     "min_vram_mb": 65536,
                     "recommended_vram_mb": 81920,
                     "download": {
-                        "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/gpt-oss-120b-Q4_K_M.gguf",
+                        "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/Q4_K_M/gpt-oss-120b-Q4_K_M-00001-of-00002.gguf",
                         "sha256": "",
-                        "filename": "gpt-oss-120b-Q4_K_M.gguf"
-                    }
+                        "filename": "Q4_K_M/gpt-oss-120b-Q4_K_M-00001-of-00002.gguf"
+                    },
+                    "files": [
+                        {
+                            "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/Q4_K_M/gpt-oss-120b-Q4_K_M-00001-of-00002.gguf",
+                            "sha256": "",
+                            "filename": "Q4_K_M/gpt-oss-120b-Q4_K_M-00001-of-00002.gguf"
+                        },
+                        {
+                            "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/Q4_K_M/gpt-oss-120b-Q4_K_M-00002-of-00002.gguf",
+                            "sha256": "",
+                            "filename": "Q4_K_M/gpt-oss-120b-Q4_K_M-00002-of-00002.gguf"
+                        }
+                    ]
                 },
                 {
                     "quantization": "Q6_K",
@@ -182,10 +194,22 @@
                     "min_vram_mb": 65536,
                     "recommended_vram_mb": 81920,
                     "download": {
-                        "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/gpt-oss-120b-Q6_K.gguf",
+                        "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/Q6_K/gpt-oss-120b-Q6_K-00001-of-00002.gguf",
                         "sha256": "",
-                        "filename": "gpt-oss-120b-Q6_K.gguf"
-                    }
+                        "filename": "Q6_K/gpt-oss-120b-Q6_K-00001-of-00002.gguf"
+                    },
+                    "files": [
+                        {
+                            "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/Q6_K/gpt-oss-120b-Q6_K-00001-of-00002.gguf",
+                            "sha256": "",
+                            "filename": "Q6_K/gpt-oss-120b-Q6_K-00001-of-00002.gguf"
+                        },
+                        {
+                            "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/Q6_K/gpt-oss-120b-Q6_K-00002-of-00002.gguf",
+                            "sha256": "",
+                            "filename": "Q6_K/gpt-oss-120b-Q6_K-00002-of-00002.gguf"
+                        }
+                    ]
                 },
                 {
                     "quantization": "Q8_0",
@@ -193,10 +217,22 @@
                     "min_vram_mb": 65536,
                     "recommended_vram_mb": 81920,
                     "download": {
-                        "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/gpt-oss-120b-Q8_0.gguf",
+                        "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/Q8_0/gpt-oss-120b-Q8_0-00001-of-00002.gguf",
                         "sha256": "",
-                        "filename": "gpt-oss-120b-Q8_0.gguf"
-                    }
+                        "filename": "Q8_0/gpt-oss-120b-Q8_0-00001-of-00002.gguf"
+                    },
+                    "files": [
+                        {
+                            "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/Q8_0/gpt-oss-120b-Q8_0-00001-of-00002.gguf",
+                            "sha256": "",
+                            "filename": "Q8_0/gpt-oss-120b-Q8_0-00001-of-00002.gguf"
+                        },
+                        {
+                            "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/Q8_0/gpt-oss-120b-Q8_0-00002-of-00002.gguf",
+                            "sha256": "",
+                            "filename": "Q8_0/gpt-oss-120b-Q8_0-00002-of-00002.gguf"
+                        }
+                    ]
                 }
             ]
         },
