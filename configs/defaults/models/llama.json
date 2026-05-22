@@ -146,6 +146,7 @@
             "provider": "llama",
             "mode": "chat",
             "ranking": 92,
+            "api_format": "harmony",
             "context_window": 131072,
             "max_tokens": 32768,
             "max_input_tokens": 131072,
