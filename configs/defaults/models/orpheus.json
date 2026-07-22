@@ -1,0 +1,13 @@
+{
+    "schema_version": "1.1.0",
+    "models": [
+        {
+            "_comment": "Local Orpheus text-to-speech via the chatllm.cpp engine (dlopen'd liborpheus_engine.so; needs an ARBITERAI_ENABLE_ORPHEUS build). The model is NOT a plain GGUF: convert with chatllm.cpp's convert.py (OrpheusTTS converter) against the SNAC decoder mlx-community/snac_24khz, then place the resulting .bin under the models dir and point file_path at it.",
+            "model": "orpheus-3b",
+            "provider": "orpheus",
+            "mode": "speech",
+            "ranking": 40,
+            "file_path": "orpheus/orpheus-3b-q8_0.bin"
+        }
+    ]
+}

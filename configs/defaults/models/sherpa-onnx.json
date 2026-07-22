@@ -1,0 +1,39 @@
+{
+    "schema_version": "1.1.0",
+    "models": [
+        {
+            "_comment": "Multilingual (zh/en/ja/ko/yue) CTC speech-to-text. sherpa-onnx has no auto-download: extract the release tarball under the arbiterAI models dir so the relative paths below resolve (base = model file_path's parent, else the models dir). Source: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09.tar.bz2",
+            "model": "sensevoice",
+            "provider": "sherpa-onnx",
+            "mode": "transcription",
+            "ranking": 55,
+            "sherpa_options": {
+                "model_type": "sense_voice",
+                "tokens": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09/tokens.txt",
+                "num_threads": 4,
+                "sense_voice": {
+                    "model": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09/model.int8.onnx",
+                    "language": "auto",
+                    "use_itn": true
+                }
+            }
+        },
+        {
+            "_comment": "English Zipformer transducer STT. sherpa-onnx has no auto-download: extract the release tarball under the arbiterAI models dir. Source: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-en-2023-06-26.tar.bz2",
+            "model": "zipformer-en",
+            "provider": "sherpa-onnx",
+            "mode": "transcription",
+            "ranking": 50,
+            "sherpa_options": {
+                "model_type": "transducer",
+                "tokens": "sherpa-onnx-zipformer-en-2023-06-26/tokens.txt",
+                "num_threads": 4,
+                "transducer": {
+                    "encoder": "sherpa-onnx-zipformer-en-2023-06-26/encoder-epoch-99-avg-1.int8.onnx",
+                    "decoder": "sherpa-onnx-zipformer-en-2023-06-26/decoder-epoch-99-avg-1.onnx",
+                    "joiner": "sherpa-onnx-zipformer-en-2023-06-26/joiner-epoch-99-avg-1.int8.onnx"
+                }
+            }
+        }
+    ]
+}

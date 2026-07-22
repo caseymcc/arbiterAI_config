@@ -1,0 +1,66 @@
+{
+    "schema_version": "1.1.0",
+    "models": [
+        {
+            "model": "whisper-large-v3-turbo",
+            "provider": "whisper",
+            "mode": "transcription",
+            "ranking": 60,
+            "whisper_options": { "language": "auto" },
+            "variants": [
+                {
+                    "quantization": "large-v3-turbo",
+                    "file_size_mb": 1624,
+                    "min_vram_mb": 2048,
+                    "recommended_vram_mb": 2560,
+                    "download": {
+                        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo.bin",
+                        "sha256": "",
+                        "filename": "ggml-large-v3-turbo.bin"
+                    }
+                }
+            ]
+        },
+        {
+            "model": "whisper-base-en",
+            "provider": "whisper",
+            "mode": "transcription",
+            "ranking": 45,
+            "whisper_options": { "language": "en" },
+            "variants": [
+                {
+                    "quantization": "base.en",
+                    "file_size_mb": 148,
+                    "min_vram_mb": 512,
+                    "recommended_vram_mb": 1024,
+                    "download": {
+                        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin",
+                        "sha256": "",
+                        "filename": "ggml-base.en.bin"
+                    }
+                }
+            ]
+        },
+        {
+            "_comment": "tinydiarize (tdrz) model — pass diarize=true on the transcription request to get speaker-turn segmentation.",
+            "model": "whisper-diarize",
+            "provider": "whisper",
+            "mode": "transcription",
+            "ranking": 40,
+            "whisper_options": { "language": "en" },
+            "variants": [
+                {
+                    "quantization": "small.en-tdrz",
+                    "file_size_mb": 488,
+                    "min_vram_mb": 1024,
+                    "recommended_vram_mb": 1536,
+                    "download": {
+                        "url": "https://huggingface.co/akashmjn/tinydiarize-whisper.cpp/resolve/main/ggml-small.en-tdrz.bin",
+                        "sha256": "",
+                        "filename": "ggml-small.en-tdrz.bin"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "schema_version": "1.1.0",
+    "models": [
+        {
+            "_comment": "Local text-to-image via stable-diffusion.cpp (needs an ARBITERAI_ENABLE_STABLE_DIFFUSION build). Operator-provided weights placed under the models dir; point file_path at the safetensors/gguf. Known issue: in-process SD can crash on some Vulkan APUs.",
+            "model": "sd-v1-5",
+            "provider": "stable-diffusion",
+            "mode": "image",
+            "ranking": 40,
+            "sd_options": { "steps": 20, "cfg_scale": 7.0, "sampler": "euler_a", "width": 512, "height": 512 },
+            "file_path": "sd/v1-5-pruned-emaonly.safetensors"
+        }
+    ]
+}

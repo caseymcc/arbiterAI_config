@@ -1,0 +1,13 @@
+{
+    "schema_version": "1.1.0",
+    "models": [
+        {
+            "_comment": "Local text-to-speech via vibevoice.cpp (needs an ARBITERAI_ENABLE_VIBEVOICE build). Operator-provided GGUF placed under the models dir; point file_path at it.",
+            "model": "vibevoice-0.5b",
+            "provider": "vibevoice",
+            "mode": "speech",
+            "ranking": 45,
+            "file_path": "vibevoice/vibevoice-realtime-0.5B-q8_0.gguf"
+        }
+    ]
+}
