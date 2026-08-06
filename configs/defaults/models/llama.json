@@ -160,7 +160,9 @@
                 "max_context": 131072,
                 "vram_per_1k_context_mb": 128
             },
-            "backend_priority": ["vulkan"],
+            "backend_priority": [
+                "vulkan"
+            ],
             "runtime_options": {
                 "flash_attn": true,
                 "n_gpu_layers": 99
@@ -255,7 +257,9 @@
                 "max_context": 131072,
                 "vram_per_1k_context_mb": 32
             },
-            "backend_priority": ["vulkan"],
+            "backend_priority": [
+                "vulkan"
+            ],
             "runtime_options": {
                 "flash_attn": true,
                 "n_gpu_layers": 99
@@ -305,7 +309,8 @@
                         "filename": "gpt-oss-20b-Q8_0.gguf"
                     }
                 }
-            ]
+            ],
+            "api_format": "harmony"
         }
     ]
 }
