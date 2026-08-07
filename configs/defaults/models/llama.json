@@ -322,6 +322,7 @@
                 "image"
             ],
             "context_window": 262144,
+            "default_context": 65536,
             "max_tokens": 32768,
             "max_input_tokens": 262144,
             "max_output_tokens": 32768,
@@ -332,7 +333,7 @@
             "context_scaling": {
                 "base_context": 4096,
                 "max_context": 262144,
-                "vram_per_1k_context_mb": 64
+                "vram_per_1k_context_mb": 133
             },
             "backend_priority": [
                 "vulkan"
