@@ -333,7 +333,7 @@
             "context_scaling": {
                 "base_context": 4096,
                 "max_context": 262144,
-                "vram_per_1k_context_mb": 133
+                "vram_per_1k_context_mb": 136
             },
             "backend_priority": [
                 "vulkan"
