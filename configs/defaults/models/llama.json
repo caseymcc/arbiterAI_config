@@ -327,7 +327,7 @@
             "max_input_tokens": 262144,
             "max_output_tokens": 32768,
             "hardware_requirements": {
-                "min_system_ram_mb": 32768,
+                "min_system_ram_mb": 16384,
                 "parameter_count": "32B"
             },
             "context_scaling": {
