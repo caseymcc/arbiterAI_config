@@ -342,8 +342,10 @@
                 "n_gpu_layers": 99,
                 "kv_cache_type_k": "q8_0",
                 "kv_cache_type_v": "q8_0",
-                "mmproj_use_gpu": true
+                "mmproj_use_gpu": true,
+                "image_min_tokens": 1024
             },
+            "api_format": "think_tags",
             "variants": [
                 {
                     "quantization": "Q4_K_M",
