@@ -311,6 +311,75 @@
                 }
             ],
             "api_format": "harmony"
+        },
+        {
+            "model": "Qwen3-VL-32B-Thinking",
+            "provider": "llama",
+            "mode": "chat",
+            "ranking": 88,
+            "input_modalities": [
+                "text",
+                "image"
+            ],
+            "context_window": 262144,
+            "max_tokens": 32768,
+            "max_input_tokens": 262144,
+            "max_output_tokens": 32768,
+            "hardware_requirements": {
+                "min_system_ram_mb": 32768,
+                "parameter_count": "32B"
+            },
+            "context_scaling": {
+                "base_context": 4096,
+                "max_context": 262144,
+                "vram_per_1k_context_mb": 64
+            },
+            "backend_priority": [
+                "vulkan"
+            ],
+            "runtime_options": {
+                "flash_attn": true,
+                "n_gpu_layers": 99,
+                "kv_cache_type_k": "q8_0",
+                "kv_cache_type_v": "q8_0",
+                "mmproj_use_gpu": true
+            },
+            "variants": [
+                {
+                    "quantization": "Q4_K_M",
+                    "file_size_mb": 18847,
+                    "min_vram_mb": 20480,
+                    "recommended_vram_mb": 24576,
+                    "download": {
+                        "url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking-GGUF/resolve/main/Qwen3VL-32B-Thinking-Q4_K_M.gguf",
+                        "sha256": "cd77316cc0147e5fadb4d3b14b13ae50f5777ab6aea3e005423828bbecd9756e",
+                        "filename": "Qwen3VL-32B-Thinking-Q4_K_M.gguf"
+                    },
+                    "mmproj": {
+                        "url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking-GGUF/resolve/main/mmproj-Qwen3VL-32B-Thinking-Q8_0.gguf",
+                        "sha256": "9311db0bf293c71523528a634d43bef911f1c6278e83087b07b2406aa82276e0",
+                        "filename": "mmproj-Qwen3VL-32B-Thinking-Q8_0.gguf",
+                        "file_size_mb": 737
+                    }
+                },
+                {
+                    "quantization": "Q8_0",
+                    "file_size_mb": 33205,
+                    "min_vram_mb": 36864,
+                    "recommended_vram_mb": 40960,
+                    "download": {
+                        "url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking-GGUF/resolve/main/Qwen3VL-32B-Thinking-Q8_0.gguf",
+                        "sha256": "e13dafb5d69c284a5e6cbe2d099bfbc02c695bed4a17a69562d73507313fda17",
+                        "filename": "Qwen3VL-32B-Thinking-Q8_0.gguf"
+                    },
+                    "mmproj": {
+                        "url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking-GGUF/resolve/main/mmproj-Qwen3VL-32B-Thinking-F16.gguf",
+                        "sha256": "d1bf5309a07fc5e0036f7267321bd8bdb75cbf4afda7b43add2a73a91320b665",
+                        "filename": "mmproj-Qwen3VL-32B-Thinking-F16.gguf",
+                        "file_size_mb": 1141
+                    }
+                }
+            ]
         }
     ]
 }
