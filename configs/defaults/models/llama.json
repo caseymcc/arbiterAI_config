@@ -346,7 +346,6 @@
                 "mmproj_use_gpu": true,
                 "image_min_tokens": 1024
             },
-            "api_format": "think_tags",
             "variants": [
                 {
                     "quantization": "Q4_K_M",
