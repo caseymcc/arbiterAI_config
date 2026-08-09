@@ -309,8 +309,7 @@
                         "filename": "gpt-oss-20b-Q8_0.gguf"
                     }
                 }
-            ],
-            "api_format": "harmony"
+            ]
         },
         {
             "model": "Qwen3-VL-32B-Thinking",
