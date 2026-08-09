@@ -381,6 +381,76 @@
                     }
                 }
             ]
+        },
+        {
+            "model": "Qwen-Image-Bench",
+            "provider": "llama",
+            "mode": "chat",
+            "ranking": 80,
+            "input_modalities": [
+                "text",
+                "image"
+            ],
+            "context_window": 262144,
+            "default_context": 65536,
+            "max_tokens": 16384,
+            "max_input_tokens": 262144,
+            "max_output_tokens": 16384,
+            "hardware_requirements": {
+                "min_system_ram_mb": 16384,
+                "parameter_count": "27B"
+            },
+            "context_scaling": {
+                "base_context": 4096,
+                "max_context": 262144,
+                "vram_per_1k_context_mb": 48
+            },
+            "backend_priority": [
+                "vulkan"
+            ],
+            "runtime_options": {
+                "flash_attn": true,
+                "n_gpu_layers": 99,
+                "kv_cache_type_k": "q8_0",
+                "kv_cache_type_v": "q8_0",
+                "mmproj_use_gpu": true
+            },
+            "variants": [
+                {
+                    "quantization": "Q4_K_M",
+                    "file_size_mb": 15781,
+                    "min_vram_mb": 17408,
+                    "recommended_vram_mb": 20480,
+                    "download": {
+                        "url": "https://huggingface.co/DawnW0lf/Qwen-Image-Bench-GGUF/resolve/main/qwen-image-bench-Q4_K_M.gguf",
+                        "sha256": "2ff097f54304ae556f2fcaa9fdd18ee980ef1563f25d359c50203352444d8c10",
+                        "filename": "qwen-image-bench-Q4_K_M.gguf"
+                    },
+                    "mmproj": {
+                        "url": "https://huggingface.co/DawnW0lf/Qwen-Image-Bench-GGUF/resolve/main/mmproj-qwen-image-bench-f16.gguf",
+                        "sha256": "dc7b378fa71756d597dd454d7ec817e655522b562e1ad97b6ddc81263f75b799",
+                        "filename": "mmproj-qwen-image-bench-f16.gguf",
+                        "file_size_mb": 888
+                    }
+                },
+                {
+                    "quantization": "Q8_0",
+                    "file_size_mb": 27271,
+                    "min_vram_mb": 29696,
+                    "recommended_vram_mb": 32768,
+                    "download": {
+                        "url": "https://huggingface.co/DawnW0lf/Qwen-Image-Bench-GGUF/resolve/main/qwen-image-bench-Q8_0.gguf",
+                        "sha256": "82269a988de66e2d6d7de7c8f6cfc146977288c1dad23788c3e0a1b3457b8bb4",
+                        "filename": "qwen-image-bench-Q8_0.gguf"
+                    },
+                    "mmproj": {
+                        "url": "https://huggingface.co/DawnW0lf/Qwen-Image-Bench-GGUF/resolve/main/mmproj-qwen-image-bench-f16.gguf",
+                        "sha256": "dc7b378fa71756d597dd454d7ec817e655522b562e1ad97b6ddc81263f75b799",
+                        "filename": "mmproj-qwen-image-bench-f16.gguf",
+                        "file_size_mb": 888
+                    }
+                }
+            ]
         }
     ]
 }
